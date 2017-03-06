@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "views/page1/page1",
+    "views/list/list",
+    "views/page2/page2",
+    "views/list2/list2",
+    "views/list3/list3",
+    "views/item/item"
+  ],
+  "window": {
+    "navigationBarTitleText": "DouBan-Demo",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#354951",
+    "backgrounColor":"#0094ff",
+    "backgroundTextStyle":"dark",
+    "enablePullDownRefresh": "true"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "views/list/list",
+      "text": "首页",
+      "iconPath": "./images/note.png",
+      "selectedIconPath": "./images/note-actived.png"
+    }, {
+      "pagePath": "views/page1/page1",
+      "text": "个人中心",
+      "iconPath": "./images/home.png",
+      "selectedIconPath": "./images/home-actived.png"
+    },{
+      "pagePath": "views/page2/page2",
+      "text": "测试",
+      "iconPath": "./images/profile.png",
+      "selectedIconPath": "./images/profile-actived.png"
+    }],
+    "color":"#fff",
+    "selectedColor":"#0094ff",
+    "borderStyle": "white",
+    "backgroundColor":"#ccc"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}
+

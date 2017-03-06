@@ -1,0 +1,11 @@
+.imageContainer {
+    width: 100%;
+}
+.avatarName {
+    font-size: 60rpx;
+    text-shadow: 0 0 8px #ccc;
+    text-align: center;
+}
+.avatarImage {
+
+}

@@ -1,0 +1,31 @@
+/*本页面的样式文件*/
+.slider swiper {
+    height: 400rpx;
+}
+.slide-image{
+    width: 100%;
+}
+.board{
+    display: flex;
+    flex-direction: column;
+    padding:30rpx;
+}
+.board-item{
+    flex: 1;
+    display: flex;
+    cursor: pointer;
+    border: 1px solid #eee;
+    margin-top: 20rpx;
+    padding: 30rpx;
+    background-color: #0094ff;
+}
+.board-item text{
+    flex: 1;
+}
+.board-item image{
+    width: 40rpx;
+    height: 40rpx;
+}
+.navigator-hover{
+    color: #000;
+}

@@ -1,0 +1,24 @@
+<loading hidden="{{!loadingShow}}">
+    正在玩命的加载中...
+</loading>
+<scroll-view bindscrolltolower="bindDownLoad" scroll-y='true' style="height:{{scrollHeight}}px;">
+    <view class="container">
+        <view class="showTitle">{{showTitle}}</view>
+        <view class="listTeathers">
+            <block wx:for="{{movieList}}" wx:key="title">
+                <navigator url='../item/item?subjectId={{item.id}}'>
+                    <view class="movieContainer">
+                        <image src="{{item.images.medium}}" mode="aspectFill"/>
+                        <view class="content">
+                            <text class="content-title">{{item.title}}</text>
+                            <text class="content-orginal-year">{{item.original_title}}({{item.year}})</text>
+                            <text class="content-director">导演：{{item.directors[0].name}}</text>
+                            <text class="content-rating">评分：{{item.rating.average}}</text>
+                        </view>
+                    </view>
+                </navigator>
+            </block>
+        </view>
+        <view hidden="{{loadingShow}}" style="text-align: center;">{{bottomTitle}}</view>
+    </view>
+</scroll-view>

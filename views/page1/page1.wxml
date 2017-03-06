@@ -1,0 +1,38 @@
+<!--Created by vcc on 2017/03/02.-->
+<!--定义页面结构-->
+<loading hidden="{{!loadingShow}}">请小主稍后一下下</loading>
+<view class="container">
+    <view class="slider">
+        <swiper indicator-dots="{{indicatorDots}}"
+                autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{imgUrls}}" wx:key="*this">
+                <swiper-item >
+                    <image src="{{item}}"  class="slide-image" />
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class="board">
+            <navigator url="../list2/list2?type=in_theaters&title=aaa" hover-class="none" >
+                <view class="board-item">
+                    <text>正在热映</text>
+                    <image src='../../images/arrowright.png' mode="aspectFill"/>
+                </view>
+            </navigator>
+            <navigator url="../list3/list3">
+                <view class="board-item">
+                    <text>即将上映</text>
+                    <image src='../../images/arrowright.png' mode="aspectFill"/>
+                </view>
+            </navigator>
+            <view class="board-item">
+                <text>Top250</text>
+                <image src='../../images/arrowright.png' mode="aspectFill"/>
+            </view>
+            <view class="board-item">
+                <text>北美票房榜</text>
+                <image src='../../images/arrowright.png' mode="aspectFill"/>
+            </view>
+        </view>
+    </view>
+    <view class="list"></view>
+</view>

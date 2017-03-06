@@ -1,0 +1,17 @@
+<loading hidden="{{!viewShow}}">
+    信息加载中请稍后...
+</loading>
+<view>{{itemDetail.title}}信息,编号：{{subjectId}}</view>
+<view class="section">
+    <view class="section_title">领衔主演</view>
+    <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex">
+        <block wx:for="{{ itemDetail.casts }}" wx:key="id">
+            <view class='imageContainer' style="display: inline-block">
+                <view>
+                    <image class="avatarImage" mode="scaleToFill" src='{{ item.avatars.medium }}' />
+                    <view class='avatarName'>{{item.name}}</view>
+                </view>
+            </view>
+        </block>
+    </scroll-view>
+</view>

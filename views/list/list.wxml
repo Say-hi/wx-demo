@@ -1,0 +1,10 @@
+<loading hidden="{{!loading}}">小主稍安勿躁   我马上就来啦</loading>
+<text hidden="{{loading}}">
+    我说：{{ message }}
+</text>
+<view>
+    <view class='item' wx:for="{{ list }}" wx:key="title">
+        <view>{{ item.title }}</view>
+        <image src="{{item.images.large}}"></image>
+    </view>
+</view>

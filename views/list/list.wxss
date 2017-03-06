@@ -1,0 +1,23 @@
+text{
+    border-bottom:4px dashed red;
+}
+.item{
+    margin-top:-1rpx;
+    border:1px solid #cc934f;
+    float: left;
+    width: 300 rpx;
+    padding:20rpx;
+    margin-left: -1 rpx;
+    text-align: center;
+}
+.item:nth-child(2n+1){
+    margin-left:35rpx;
+}
+.item:nth-child(2n){
+    float: right;
+    margin-right: 35rpx;
+}
+.item image{
+    width:210rpx;
+    height:290rpx;
+}
